@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Little Sophi | Ropa y accesorios para niños</title>
+<meta name="description" content="Estilo, ternura y comodidad para los más pequeños. Ropa, accesorios y calzado suave para bebés y niños.">
+<link rel="icon" type="image/png" href="assets/img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--purple:#9678BF;--lilac:#BFADD9;--navy:#0E2F59;--slate:#61748C;--base:#F2F2F2;--bg:#fff;--soft:#F6F2FB;--card:#fff;--line:#E6DFF1;
+--r:24px;--head:'Fredoka','Poppins',system-ui,sans-serif;--body:'Manrope','Quicksand',system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1B33;--soft:#10264A;--card:#12294D;--navy:#F2F2F2;--slate:#B4C0D0;--line:#23406B;--base:#10264A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B1B33;--soft:#10264A;--card:#12294D;--navy:#F2F2F2;--slate:#B4C0D0;--line:#23406B;--base:#10264A;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(84px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--slate);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--head);color:var(--navy);line-height:1.12;margin:0;font-weight:600}
+h1{font-size:clamp(2.4rem,6vw,4.1rem);font-weight:700}
+h2{font-size:clamp(1.9rem,4vw,2.7rem)}
+h3{font-size:1.3rem}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--purple);outline-offset:3px;border-radius:8px}
+.wrap{width:min(1160px,100% - 2.5rem);margin-inline:auto}
+section{padding:clamp(4rem,9vw,7.5rem) 0}
+.lead{max-width:56ch;font-size:1.15rem}
+.center{text-align:center}.center .lead{margin-inline:auto}
+.head{display:grid;gap:1rem;margin-bottom:3.2rem}
+
+/* botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;font:600 1.05rem var(--head);padding:.95rem 1.7rem;border-radius:999px;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s,color .2s,border-color .2s}
+.btn svg{width:20px;height:20px;fill:currentColor}
+.btn-primary{background:var(--purple);color:#fff;box-shadow:0 8px 22px -8px var(--purple)}
+.btn-primary:hover{background:#7f5fab;transform:translateY(-3px);box-shadow:0 14px 26px -10px #7f5fab}
+.btn-primary:active{transform:translateY(0)}
+.btn-ghost{border-color:var(--lilac);color:var(--navy);background:transparent}
+.btn-ghost:hover{background:var(--lilac);border-color:var(--lilac);color:#0E2F59;transform:translateY(-3px)}
+.btn-light{background:#fff;color:var(--navy);color:#0E2F59}
+.btn-light:hover{background:var(--base);color:#0E2F59;transform:translateY(-3px)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:1rem}
+.brand{font:700 1.5rem var(--head);color:var(--navy);display:flex;align-items:center;gap:.55rem}
+.brand img{width:40px;height:40px;object-fit:contain;border-radius:10px}
+.brand span{color:var(--purple)}
+nav ul{display:flex;gap:2rem;list-style:none;margin:0;padding:0;align-items:center}
+nav a:not(.btn){font-weight:700;color:var(--navy);position:relative;padding:.3rem 0;transition:color .2s}
+nav a:not(.btn)::after{content:"";position:absolute;left:0;bottom:-2px;height:2px;width:0;background:var(--purple);transition:width .25s}
+nav a:not(.btn):hover{color:var(--purple)}nav a:not(.btn):hover::after{width:100%}
+nav .btn{padding:.6rem 1.3rem;font-size:.98rem;color:#fff}
+.burger{display:none;background:none;border:0;width:44px;height:44px;border-radius:12px;cursor:pointer;color:var(--navy);transition:background .2s}
+.burger:hover{background:var(--soft)}
+.burger svg{width:26px;height:26px;stroke:currentColor;stroke-width:2.2;fill:none;stroke-linecap:round}
+
+/* hero */
+.hero{padding-top:clamp(2.5rem,6vw,5rem);background:radial-gradient(circle at 85% 20%,var(--soft),transparent 55%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center}
+.hero-copy{display:grid;gap:1.5rem;justify-items:start}
+.actions{display:flex;flex-wrap:wrap;gap:.9rem}
+.proof{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;font-weight:700;color:var(--navy);font-size:.95rem;margin-top:.4rem}
+.proof span{display:flex;align-items:center;gap:.45rem}
+.proof i{width:8px;height:8px;border-radius:50%;background:var(--lilac)}
+.logo-card{position:relative;justify-self:center;width:min(430px,100%);aspect-ratio:1;border-radius:48% 52% 46% 54%/52% 46% 54% 48%;background:var(--soft);display:grid;place-items:center;animation:float 7s ease-in-out infinite}
+.logo-card::before{content:"";position:absolute;inset:-14px;border-radius:inherit;border:2px dashed var(--lilac);opacity:.7}
+.logo-card img{width:82%;border-radius:50%;background:#fff}
+@keyframes float{50%{transform:translateY(-12px)}}
+
+/* lineas */
+.lines{background:var(--soft)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.line{background:var(--card);border-radius:var(--r);padding:2.2rem 1.8rem;display:grid;gap:.9rem;justify-items:center;text-align:center;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
+.line:hover{transform:translateY(-6px);box-shadow:0 22px 40px -24px var(--purple)}
+.ico{width:96px;height:96px;border-radius:50%;background:var(--soft);display:grid;place-items:center;border:3px solid var(--lilac);margin-bottom:.4rem}
+.lines .ico{background:var(--bg)}
+.ico svg{width:44px;height:44px;stroke:var(--purple);stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.tag{font:700 .85rem var(--body);color:var(--purple)}
+.line .link{font:600 1rem var(--head);color:var(--purple);margin-top:.4rem;border-bottom:2px solid transparent;transition:border-color .2s}
+.line .link:hover{border-color:var(--purple)}
+
+/* pilares */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:2.5rem}
+.pillar{display:grid;gap:.7rem;justify-items:center;text-align:center}
+.pillar p{max-width:30ch}
+
+/* unboxing */
+.box{background:var(--navy);color:#D8DFEA;border-radius:calc(var(--r) + 12px);padding:clamp(2rem,6vw,4.5rem);display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;--n:#0E2F59}
+.box h2{color:#fff}
+.box .tag{color:var(--lilac)}
+.gift{display:grid;gap:1rem}
+.gift div{display:flex;gap:1rem;align-items:flex-start;background:rgba(255,255,255,.07);border-radius:18px;padding:1.1rem 1.3rem;transition:background .2s}
+.gift div:hover{background:rgba(255,255,255,.12)}
+.gift svg{flex:none;width:30px;height:30px;stroke:var(--lilac);stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.gift b{color:#fff;font-family:var(--head);font-weight:500;display:block;font-size:1.1rem}
+
+/* pasos */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;counter-reset:s}
+.step{border-top:3px solid var(--lilac);padding-top:1.3rem;display:grid;gap:.5rem}
+.step::before{counter-increment:s;content:counter(s);font:700 2.6rem/1 var(--head);color:var(--purple)}
+
+/* cta */
+.cta{padding-top:0}
+.cta-box{background:linear-gradient(135deg,var(--purple),#7c5ba8);border-radius:calc(var(--r) + 12px);padding:clamp(2.5rem,7vw,5rem) 1.5rem;display:grid;gap:1.4rem;justify-items:center;text-align:center;color:#fff}
+.cta-box h2{color:#fff;max-width:20ch}
+.cta-box p{max-width:46ch;color:#F3ECFB}
+.cta-box .tel{font:600 1.1rem var(--head);color:#fff;border-bottom:2px solid rgba(255,255,255,.4);transition:border-color .2s}
+.cta-box .tel:hover{border-color:#fff}
+
+footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.95rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;align-items:center}
+footer a{color:var(--navy);font-weight:700;transition:color .2s}footer a:hover{color:var(--purple)}
+
+.wa-float{position:fixed;right:max(1rem,env(safe-area-inset-right,0px));bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:30;width:58px;height:58px;border-radius:50%;background:var(--purple);color:#fff;display:none;place-items:center;box-shadow:0 10px 24px -8px var(--navy);transition:transform .2s,background .2s}
+.wa-float:hover{background:#7f5fab;transform:scale(1.08)}
+.wa-float svg{width:28px;height:28px;fill:#fff}
+
+@media (max-width:960px){
+.hero .wrap,.box{grid-template-columns:1fr}
+.logo-card{order:-1;width:min(300px,80%)}
+.grid3,.pillars,.steps{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+.burger{display:grid;place-items:center}
+nav ul{position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:1.2rem;padding:1.5rem;background:var(--bg);border-bottom:1px solid var(--line);display:none}
+nav ul.open{display:flex}
+.grid3,.pillars,.steps{grid-template-columns:1fr}
+.hero-copy{justify-items:stretch}.actions .btn{flex:1 1 100%}
+.wa-float{display:grid}
+footer .wrap{flex-direction:column;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* catalogo */
+.cat{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem}
+.item{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s}
+.item:hover{transform:translateY(-6px);box-shadow:0 22px 40px -24px var(--purple)}
+.ph{position:relative;aspect-ratio:1;overflow:hidden;background:var(--soft)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s}
+.item:hover .ph img{transform:scale(1.05)}
+.chip{position:absolute;left:.8rem;top:.8rem;background:#fff;color:#0E2F59;font:700 .8rem var(--body);padding:.3rem .75rem;border-radius:999px;box-shadow:0 4px 12px -6px #0E2F59}
+.info{padding:1.2rem 1.3rem 1.4rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.info h3{font-size:1.12rem}.info p{font-size:.93rem;line-height:1.5}
+.buy{display:flex;align-items:center;justify-content:space-between;gap:.6rem;margin-top:auto;padding-top:.8rem}
+.buy strong{font:600 1.35rem var(--head);color:var(--navy)}
+.buy .btn{padding:.5rem 1.2rem;font-size:.95rem}
+@media (max-width:1060px){.cat{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.cat{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<a href="#inicio" class="brand"><img src="assets/img/logo.png" alt="">Little <span>Sophi</span></a>
+<nav aria-label="Principal">
+<ul id="menu">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#productos">Productos</a></li>
+<li><a href="#catalogo">Catálogo</a></li>
+<li><a href="#nosotros">Por qué elegirnos</a></li>
+<li><a href="#pedir">Cómo pedir</a></li>
+<li><a class="btn btn-primary" href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+<button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="wrap">
+<div class="hero-copy">
+<h1>Estilo, ternura y comodidad para los más pequeños</h1>
+<p class="lead">Ropa, accesorios y calzado suave para bebés y niños. Diseño moderno, telas hipoalergénicas y la resistencia que necesita el juego de cada día.</p>
+<div class="actions">
+<a class="btn btn-primary" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20ver%20el%20cat%C3%A1logo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.300 1.200-1.800 1.200-.5.1-1 .2-3.300-.7-2.800-1.100-4.500-3.900-4.700-4.100-.1-.2-1.100-1.500-1.100-2.800s.7-2 .9-2.300c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.8 2c.1.2.1.300 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.9-1.100c.2-.3.4-.2.700-.1l1.900.9c.3.100.5.200.5.400.1.100.1.700-.1 1.200z"/></svg>Ver catálogo por WhatsApp</a>
+<a class="btn btn-ghost" href="#productos">Explorar productos</a>
+</div>
+<div class="proof"><span><i></i>Algodón premium</span><span><i></i>Fibras hipoalergénicas</span><span><i></i>Envío en papel seda</span></div>
+</div>
+<div class="logo-card"><img src="assets/img/logo.png" alt="Logo Little Sophi: osito con corona y moño"></div>
+</div>
+</section>
+
+<section class="lines" id="productos">
+<div class="wrap">
+<div class="head center"><h2>Todo para vestir su mejor sonrisa</h2><p class="lead">Tres líneas pensadas para que cada outfit sea cómodo, combinable y lleno de encanto.</p></div>
+<div class="grid3">
+<article class="line"><div class="ico"><svg viewBox="0 0 24 24"><path d="M8 4 3 7l2 4 3-1v10h8V10l3 1 2-4-5-3c-1 2-7 2-8 0z"/></svg></div><span class="tag">Moda y confort</span><h3>Ropa infantil</h3><p>Conjuntos, vestidos, camisas, pantalones y mamelucos en telas respirables y suaves.</p><a class="link" href="https://wa.me/573017100470?text=Hola%2C%20quiero%20ver%20ropa%20infantil" target="_blank" rel="noopener">Pedir ropa</a></article>
+<article class="line"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 12 4 7v10zM12 12l8-5v10z"/><circle cx="12" cy="12" r="2"/></svg></div><span class="tag">Detalles únicos</span><h3>Accesorios</h3><p>Moños, diademas, gorritos, medias y complementos que perfeccionan cada look.</p><a class="link" href="https://wa.me/573017100470?text=Hola%2C%20quiero%20ver%20accesorios" target="_blank" rel="noopener">Pedir accesorios</a></article>
+<article class="line"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 18v-7h5l3 3h6c3 0 4 2 4 4z"/><path d="M8 11V8"/></svg></div><span class="tag">Pasos seguros</span><h3>Calzado suave</h3><p>Zapatitos y sandalias flexibles que respetan el desarrollo del pie de los niños.</p><a class="link" href="https://wa.me/573017100470?text=Hola%2C%20quiero%20ver%20calzado" target="_blank" rel="noopener">Pedir calzado</a></article>
+</div>
+</div>
+</section>
+
+<section id="catalogo">
+<div class="wrap">
+<div class="head center"><h2>Catálogo de la temporada</h2><p class="lead">Conjuntos, vestidos y calzado listos para entrega. Toca “Pedir” y te atendemos por WhatsApp.</p></div>
+<div class="cat">
+<article class="item"><div class="ph"><img src="assets/img/producto-1.jpg" alt="Conjunto “Happy Every Day”" loading="lazy"><span class="chip">Talla 5 A</span></div><div class="info"><h3>Conjunto “Happy Every Day”</h3><p>Camiseta estampada y short-falda fucsia con moño</p><div class="buy"><strong>$40.000</strong><a class="btn btn-primary" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20pedir%3A%20Conjunto%20%E2%80%9CHappy%20Every%20Day%E2%80%9D%20%28Talla%205%20A%29" target="_blank" rel="noopener">Pedir</a></div></div></article>
+<article class="item"><div class="ph"><img src="assets/img/producto-2.jpg" alt="Conjunto texturizado con riñonera" loading="lazy"><span class="chip">Talla 5 A</span></div><div class="info"><h3>Conjunto texturizado con riñonera</h3><p>Camiseta y short blancos con bordes color chocolate</p><div class="buy"><strong>$45.000</strong><a class="btn btn-primary" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20pedir%3A%20Conjunto%20texturizado%20con%20ri%C3%B1onera%20%28Talla%205%20A%29" target="_blank" rel="noopener">Pedir</a></div></div></article>
+<article class="item"><div class="ph"><img src="assets/img/producto-3.jpg" alt="Conjunto polo osito" loading="lazy"><span class="chip">Talla 18-24 M</span></div><div class="info"><h3>Conjunto polo osito</h3><p>Polo y short en tejido texturizado con parche de oso</p><div class="buy"><strong>$35.000</strong><a class="btn btn-primary" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20pedir%3A%20Conjunto%20polo%20osito%20%28Talla%2018-24%20M%29" target="_blank" rel="noopener">Pedir</a></div></div></article>
+<article class="item"><div class="ph"><img src="assets/img/producto-4.jpg" alt="Conjunto girasol y flores" loading="lazy"><span class="chip">Talla 6</span></div><div class="info"><h3>Conjunto girasol y flores</h3><p>Top amarillo de cuadros con moños y short de jean</p><div class="buy"><strong>$35.000</strong><a class="btn btn-primary" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20pedir%3A%20Conjunto%20girasol%20y%20flores%20%28Talla%206%29" target="_blank" rel="noopener">Pedir</a></div></div></article>
+<article class="item"><div class="ph"><img src="assets/img/producto-5.jpg" alt="Botas rosadas" loading="lazy"><span class="chip">Talla 22</span></div><div class="info"><h3>Botas rosadas</h3><p>Cómodas, resistentes y adorables para cada aventura</p><div class="buy"><strong>$45.000</strong><a class="btn btn-primary" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20pedir%3A%20Botas%20rosadas%20%28Talla%2022%29" target="_blank" rel="noopener">Pedir</a></div></div></article>
+<article class="item"><div class="ph"><img src="assets/img/producto-6.jpg" alt="Conjunto fresitas" loading="lazy"><span class="chip">Talla 3-4</span></div><div class="info"><h3>Conjunto fresitas</h3><p>Blusa con volantes y short rayado con fresas</p><div class="buy"><strong>$35.000</strong><a class="btn btn-primary" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20pedir%3A%20Conjunto%20fresitas%20%28Talla%203-4%29" target="_blank" rel="noopener">Pedir</a></div></div></article>
+<article class="item"><div class="ph"><img src="assets/img/producto-7.jpg" alt="Vestido Honey" loading="lazy"><span class="chip">Talla 18-24 M</span></div><div class="info"><h3>Vestido Honey</h3><p>Vestido blanco con chaleco fucsia bordado</p><div class="buy"><strong>$35.000</strong><a class="btn btn-primary" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20pedir%3A%20Vestido%20Honey%20%28Talla%2018-24%20M%29" target="_blank" rel="noopener">Pedir</a></div></div></article>
+<article class="item"><div class="ph"><img src="assets/img/producto-8.jpg" alt="Conjunto dinosaurio con gorro" loading="lazy"><span class="chip">Talla 18-24 M</span></div><div class="info"><h3>Conjunto dinosaurio con gorro</h3><p>Camisa, short y gorro en algodón suave</p><div class="buy"><strong>$40.000</strong><a class="btn btn-primary" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20pedir%3A%20Conjunto%20dinosaurio%20con%20gorro%20%28Talla%2018-24%20M%29" target="_blank" rel="noopener">Pedir</a></div></div></article>
+</div>
+<div class="center" style="margin-top:3rem"><a class="btn btn-ghost" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20ver%20m%C3%A1s%20referencias" target="_blank" rel="noopener">Ver más referencias</a></div>
+</div>
+</section>
+
+<section id="nosotros">
+<div class="wrap">
+<div class="head center"><h2>Cuidamos lo que más quieres</h2><p class="lead">Cada prenda se elige pensando en la piel sensible, el movimiento libre y la ternura del día a día.</p></div>
+<div class="pillars">
+<div class="pillar"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21C5 15 3 11 3 8a4.500 4.500 0 0 1 9-2 4.500 4.500 0 0 1 9 2c0 3-2 7-9 13z"/></svg></div><h3>Dulzura</h3><p>Estética encantadora y delicada en cada prenda.</p></div>
+<div class="pillar"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3 20 6v6c0 5-4 8-8 9-4-1-8-4-8-9V6z"/><path d="m8.500 12 2.500 2.500 4.500-5"/></svg></div><h3>Calidad</h3><p>Textiles suaves, duraderos e hipoalergénicos.</p></div>
+<div class="pillar"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14q4 4 8 0M9 9.500h.01M15 9.500h.01"/></svg></div><h3>Comodidad</h3><p>Libertad total de movimiento para jugar y soñar.</p></div>
+</div>
+</div>
+</section>
+
+<section style="padding-top:0">
+<div class="wrap">
+<div class="box">
+<div style="display:grid;gap:1.2rem">
+<span class="tag">Experiencia de compra</span>
+<h2>Cada pedido llega como un regalo</h2>
+<p>Pensamos en los papás tanto como en los niños: tu compra se entrega lista para sorprender.</p>
+<div><a class="btn btn-light" href="https://wa.me/573017100470?text=Hola%2C%20quiero%20un%20kit%20de%20regalo" target="_blank" rel="noopener">Pedir kit de regalo</a></div>
+</div>
+<div class="gift">
+<div><svg viewBox="0 0 24 24"><path d="M4 9h16v11H4zM2 6h20v3H2zM12 6v14"/></svg><p><b>Papel seda aromático</b>Envuelto con cuidado, con patrón de coronas.</p></div>
+<div><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg><p><b>Tarjeta personalizada</b>Un mensaje de agradecimiento para ti.</p></div>
+<div><svg viewBox="0 0 24 24"><path d="m4 17 2-9 4 4 2-6 2 6 4-4 2 9z"/></svg><p><b>Sello de corona</b>El isotipo de Little Sophi cierra cada paquete.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="pedir" style="padding-top:0">
+<div class="wrap">
+<div class="head"><h2>Pedir es fácil</h2><p class="lead">Tres pasos y tu pedido está en camino.</p></div>
+<div class="steps">
+<div class="step"><h3>Escríbenos</h3><p>Abre el chat de WhatsApp y cuéntanos qué buscas, la edad y la talla.</p></div>
+<div class="step"><h3>Elige tu look</h3><p>Te enviamos el catálogo y te ayudamos a combinar prendas y accesorios.</p></div>
+<div class="step"><h3>Recibe tu pedido</h3><p>Lo empacamos en papel seda con tarjeta y sello de corona.</p></div>
+</div>
+</div>
+</section>
+
+<section class="cta" id="contacto">
+<div class="wrap">
+<div class="cta-box">
+<h2>Vístelos con ternura, hoy</h2>
+<p>Escríbenos y recibe el catálogo de Little Sophi con asesoría personalizada.</p>
+<a class="btn btn-light" href="https://wa.me/573017100470?text=Hola%20Little%20Sophi%2C%20quiero%20ver%20el%20cat%C3%A1logo" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+<a class="tel" href="tel:+573017100470">+57 301 7100470</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<span>© 2026 Little Sophi · Ropa y accesorios para niños</span>
+<a href="tel:+573017100470">+57 301 7100470</a>
+</div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/573017100470" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.600 15.100L2 22l5-1.300A10 10 0 1 0 12 2zm5.200 14.200c-.2.600-1.300 1.200-1.800 1.200-.5.100-1 .2-3.300-.7-2.800-1.100-4.500-3.900-4.700-4.100-.1-.2-1.100-1.500-1.100-2.800s.7-2 .9-2.300c.3-.3.600-.3.800-.3h.6c.2 0 .4 0 .6.500l.8 2c.1.2.1.300 0 .5l-.4.600c-.1.200-.3.300-.1.600.2.300.8 1.300 1.700 2.100 1.100 1 2.100 1.300 2.400 1.500.3.100.5.100.6-.1l.9-1.100c.2-.3.4-.2.700-.1l1.900.9c.3.100.5.200.5.400.1.100.1.700-.1 1.200z"/></svg></a>
+
+<script>
+const b=document.getElementById('burger'),m=document.getElementById('menu');
+b.addEventListener('click',()=>{const o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{m.classList.remove('open');b.setAttribute('aria-expanded',false)}));
+</script>
+</body>
+</html>

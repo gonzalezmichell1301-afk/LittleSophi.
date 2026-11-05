@@ -1,0 +1,7 @@
+LITTLE SOPHI - Landing page
+Instrucciones de montaje:
+1. Descomprime este archivo.
+2. Sube TODO el contenido (index.html y la carpeta assets) a la raiz del hosting (public_html, www o htdocs).
+3. Abre tu dominio: index.html se carga automaticamente.
+Para cambiar precios o textos edita index.html; las imagenes estan en assets/img.
+Las fuentes (Google Fonts) requieren conexion a internet.
